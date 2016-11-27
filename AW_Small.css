@@ -10,15 +10,14 @@ head,body
     position: relative;
     width: 100%;
     height: 75vh;
-    min-height: 450px;
-    max-height: 500px;
+    height: 500px;
     background: url(Assets/mountain.jpg) center;
     background-size: cover;
     box-shadow: inset 0 0 0 500px rgba(49,120,115,.7);
 }
 #nav
 {
-    position:  fixed;
+    position: fixed;
     width: 100%;
     /*background-color: #317873;*/
     z-index: 100;
@@ -81,7 +80,7 @@ li a.active {
     text-align: center;
     color: #eee;
     font-family: 'Vollkorn', serif;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 #headText h1, #headText h5
 {
@@ -218,47 +217,46 @@ body a:hover
 {
     max-width: 805px;
     margin: 0px auto 0px auto;
-    display: table;
     position: relative;
 }
 #job1, #job2, #job3
 {
-    display: block;
+    display: inline-block;
     position: relative;
-    width: 100%;
-    clear: left;
+    margin: 0 auto;
+    width: 98%;
     padding-top: 75px;
 }
 .jobpic, .jobtext
 {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
 }
 .jobpic
 {
     text-align: center;
     max-width: 300px;
+    margin: 15px auto;
 }
 .jobtext
 {
     max-width: 475px;
-    margin: 0 10px;
+    margin: 0 auto;
     color: #333;
+    padding: 10px 0;
+    text-align: left;
 }
 .jobpic img
 {
     width: 300px;
     text-align: center;
 }
-.jobtext
-{
-    padding: 10px 0;
-}
 .jobtext h2, .jobtext h3, .jobtext h4
 {
     font-family: 'Vollkorn', serif;
     font-size: 700;
     margin: 0;
+    text-align: left;
 }
 .jobtext h4
 {
@@ -272,28 +270,12 @@ body a:hover
 {
     font-family: 'Roboto', sans-serif;
     margin: 10px 0;
+    list-style: none;
 }
 
-#job2::after
-{
-    content:"";
-    display:table;
-    clear:both;
-}
-#job2 .jobpic
-{
-    float: right;
-    margin-top: 50px;
-}
-
-#job2 .jobtext
-{
-    float: left;
-}
 #portfolio
 {
     max-width: 700px;
-    text-align: left;
     margin: 75px auto;
 }
 #portfolio h2
@@ -301,30 +283,29 @@ body a:hover
     font-family: 'Vollkorn', serif;
     font-size: 700;
     color: #333;
+    text-align: center;
 }
 
 #portfolio p
 {
-    display: inline-block;
+    display: block;
     font-family: 'Roboto', sans-serif;
     color: #333;
     width: 66.6%;
     margin: 0 auto;
     line-height: normal;
-    vertical-align: middle;
     line-height: 20px;
 }
 .porttext img
 {
-    display: inline-block;
+    display: block;
     height: 150px;
     width: 150px;
-    margin: 0 10px;
+    margin: 0 auto 15px auto;
     border-radius: 50%;
     border: solid;
     border-width: 4px;
     border-color: #a0d6b4;
-    vertical-align: middle;
 }
 
 #port1, #port2, #port3
